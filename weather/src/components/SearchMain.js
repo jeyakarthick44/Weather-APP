@@ -1,4 +1,4 @@
-import React, {useEffect,useState} from 'react'
+import React, {useState} from 'react'
 import "../components/style.css";
 import  WeatherDetails from "./WeatherDetails"
 
@@ -10,7 +10,7 @@ import  WeatherDetails from "./WeatherDetails"
             <div className="search">
                 <input onChange={(e) => {setSearchTerm(e.target.value)}} value={searchTerm}type="search" placeholder="Type City Name" id="search"/>
             </div>   
-               <button onClick={(getWeatherInfo)} className="searchButton" > Search</button>
+               <button className="searchButton" > Search</button>
         </div>
         <WeatherDetails />
         </>
